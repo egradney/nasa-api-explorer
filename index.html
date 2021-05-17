@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://jacintodesign.github.io/nasa-api-pictures/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
+    <!-- Default Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader hidden">
+        <img src="loader/rocket.svg" alt="Rocket Loading Animation">
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <!-- Results Nav -->
+            <span class="navigation-items" id="resultsNav">
+                <button class="btn" onclick="updateDOM('favorites')">Favorites</button>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <button class="btn" onclick="getNasaPictures()">Load More</button>
+            </span>
+            <!-- Favorites Nav -->
+            <span class="navigation-items hidden" id="favoritesNav">
+                <button class="btn" onclick="getNasaPictures()">Load More NASA Images</button>
+            </span>
+        </div>
+        Images Container
+        <div class="images-container">
+        </div>
+    </div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden="">
+        <h1>ADDED!</h1>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body></html>
